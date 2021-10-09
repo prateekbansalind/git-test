@@ -1,0 +1,33 @@
+# To create a git repo in a working directory
+
+steps: 
+1. in bash: go to the working directory which you want it to be a part of git repo.
+2. bash: type "git init" to initialize a git repo. It will be created as ".git" folder in the working directory. Its is a hidden file, which you can see with the command called "ls -a".
+3. Now you have a git repo but nothing has been pushed and commited into.
+4. use command "git status" - to see which are files are present in the staging area. "staging area" is a mediator place between working dir and local repo.
+5. To add files from work dir to local repo - use command "git add <file name>" or for all files "git add ."
+6. Once files are staged, then use this command to commit the changes with a message. - "git commit -m "<Message>"". (message should be in present tense)
+7. To check whether the file has commited or not - use command "git log".
+
+
+#To push local repo into remote repo
+steps:
+1. git remote add origin <ssh or http remote repo> - in this command origin could be replaced with any name. Its is just a naming convention industry people uses it.
+2. git branch -M main     : here the main is the name of the main branch
+3. git push -u origin main     : here -u is used to merge and push the files from local to remote repo.
+
+
+
+# Usage and creation of .gitignore 
+
+steps;
+1. the use of .gitignore file is to prevent keeping the files online/remote repo which contains secret password/ api keys.
+2. to create .gitignore - use command "mkdir gitignore". It will create a hidden text file into your work directory.
+3. mention the file names along with their extension in .gitignore file to prevent pushing those files on remote location.
+
+
+# usage and creation of git clone
+
+steps: 
+1. The usage of cloning is to clone a remote repo into our local working directoy/ locl repo.
+2. use command "git clone <ssh or http repo address>".
